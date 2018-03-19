@@ -33,15 +33,15 @@ class CheckInvoiceTest(unittest.TestCase):
         pass
 
     def test_tianjin(self):
-        """天津普通发票查验成功"""
+        """天津普通发票查验"""
         payload = {
-            "fpdm": "1300171320",
-            "fphm": "00271657",
+            "fpdm": "1200172320",
+            "fphm": "09064299",
             "fplx": "04",
-            "jym": "703727",
-            "kprq": "20170924",
+            "jym": "212144",
+            "kprq": "20171023",
             "uniqueId": "1000004",
-            "sign": md5("fpdm=1300171320&fphm=00271657&fplx=04&jym=703727&kprq=20170924&uniqueId=1000004&de92dbf0b12d11e6aa28b0c090607876".encode("utf-8"))
+            "sign": md5("fpdm=1200172320&fphm=09064299&fplx=04&jym=212144&kprq=20171023&uniqueId=1000004&de92dbf0b12d11e6aa28b0c090607876".encode("utf-8"))
         }
 
         test_chack = Chack()
@@ -49,8 +49,8 @@ class CheckInvoiceTest(unittest.TestCase):
 
 
 
-    def test_check_invoice_shanghai(self):
-        """上海普通发票查验成功"""
+    def test_shanghai(self):
+        """上海普通发票查验"""
         payload = {'fplx': '04', 'fpdm': '3100162320', 'fphm': '56618159', 'jym': '690593',
                    'kprq': '20170213',"uniqueId":"1000004",
                    "sign":md5("fpdm=3100162320&fphm=56618159&fplx=04&jym=690593&kprq=20170213&uniqueId=1000004&de92dbf0b12d11e6aa28b0c090607876".encode("utf-8"))}
@@ -58,8 +58,8 @@ class CheckInvoiceTest(unittest.TestCase):
         test_chack.chack(self.url, payload, self.headers)
 
 
-    def test_beijing_success(self):
-        """北京发票查验成功"""
+    def test_beijing(self):
+        """北京普通发票查验"""
         payload = {
             "fpdm": "1100171320",
             "fphm": "29688656",
@@ -72,15 +72,15 @@ class CheckInvoiceTest(unittest.TestCase):
         test_chack = Chack()
         test_chack.chack(self.url, payload, self.headers)
 
-    def test_check_invoice_hebei(self):
-        """河北普通发票查验成功"""
+    def test_hebei(self):
+        """河北普通发票查验"""
         payload = {'fplx': '04', 'fpdm': '1300171320', 'fphm': '00271772', 'jym': '936815',
                    'kprq': '20170927','uniqueId':'1000004',
                    'sign':md5("fpdm=1300171320&fphm=00271772&fplx=04&jym=936815&kprq=20170927&uniqueId=1000004&de92dbf0b12d11e6aa28b0c090607876".encode("utf-8"))}
         test_chack = Chack()
         test_chack.chack(self.url, payload, self.headers)
 
-    def test_check_invoice_liaoning(self):
+    def test_liaoning(self):
         """辽宁普通发票查验成功"""
         payload = {'fplx': '04', 'fpdm': '2100171320', 'fphm': '11695353', 'jym': '893273',
                    'kprq': '20170925','uniqueId':'1000004',
@@ -88,24 +88,24 @@ class CheckInvoiceTest(unittest.TestCase):
         test_chack = Chack()
         test_chack.chack(self.url, payload, self.headers)
 
-    def test_check_invoice_anhui(self):
-        """安徽普通发票查验成功"""
+    def test_anhui(self):
+        """安徽普通发票查验"""
         payload = {'fplx': '04', 'fpdm': '3400172320', 'fphm': '19768327','jym': '156228',
                    'kprq': '20171020','uniqueId':'1000004',
                    'sign':md5("fpdm=3400172320&fphm=19768327&fplx=04&jym=156228&kprq=20171020&uniqueId=1000004&de92dbf0b12d11e6aa28b0c090607876".encode("utf-8"))}
         test_chack = Chack()
         test_chack.chack(self.url, payload, self.headers)
 
-    def test_check_invoice_henan(self):
-        """河南普通发票查验成功"""
+    def test_henan(self):
+        """河南普通发票查验"""
         payload = {'fplx': '04', 'fpdm': '4100171320', 'fphm': '05326230', 'jym': '710099',
                    'kprq': '20171123','uniqueId':'1000004',
                    'sign':md5("fpdm=4100171320&fphm=05326230&fplx=04&jym=710099&kprq=20171123&uniqueId=1000004&de92dbf0b12d11e6aa28b0c090607876".encode("utf-8"))}
         test_chack = Chack()
         test_chack.chack(self.url, payload, self.headers)
 
-    def test_check_invoice_shenzhen(self):
-        """深圳普通发票查验成功"""
+    def testshenzhen(self):
+        """深圳普通发票查验"""
         payload = {'fplx': '04', 'fpdm': '4403162320', 'fphm': '66718525',  'jym': '520590',
                    'kprq': '20170814','uniqueId':'1000004',
                    'sign':md5("fpdm=4403162320&fphm=66718525&fplx=04&jym=520590&kprq=20170814&uniqueId=1000004&de92dbf0b12d11e6aa28b0c090607876".encode("utf-8"))}
@@ -122,8 +122,8 @@ class CheckInvoiceTest(unittest.TestCase):
 
 
 
-    def test_check_invoice_neimeng(self):
-        """内蒙普通发票查验成功"""
+    def test_neimeng(self):
+        """内蒙普通发票查验"""
         payload = {'fplx': '04', 'fpdm': '1500164350', 'fphm': '01058176', 'jym': '119257',
                    'kprq': '20170720','uniqueId':'1000004',
                    'sign':md5("fpdm=1500164350&fphm=01058176&fplx=04&jym=119257&kprq=20170720&uniqueId=1000004&de92dbf0b12d11e6aa28b0c090607876".encode("utf-8"))}
@@ -132,96 +132,96 @@ class CheckInvoiceTest(unittest.TestCase):
 
 
 
-    def test_check_invoice_jilin(self):
-        """吉林普通发票查验成功"""
+    def test_jilin(self):
+        """吉林普通发票查验"""
         payload = {'fplx': '04', 'fpdm': '2200162350', 'fphm': '01875257', 'jym': '878078',
                    'kprq': '20171115','uniqueId':'1000004',
                    'sign':md5("fpdm=2200162350&fphm=01875257&fplx=04&jym=878078&kprq=20171115&uniqueId=1000004&de92dbf0b12d11e6aa28b0c090607876".encode("utf-8"))}
         test_chack = Chack()
         test_chack.chack(self.url, payload, self.headers)
 
-    def test_check_invoice_zhejiang(self):
-        """浙江专用发票查验成功"""
+    def test_zhejiang(self):
+        """浙江专用发票查验"""
         payload = {'fplx': '01', 'fpdm': '3300154130', 'fphm': '05331852',  'fpje': '53.68',
                    'kprq': '20171010','uniqueId':'1000004',
                    'sign':md5("fpdm=3300154130&fphm=05331852&fpje=53.68&fplx=01&kprq=20171010&uniqueId=1000004&de92dbf0b12d11e6aa28b0c090607876".encode("utf-8"))}
         test_chack = Chack()
         test_chack.chack(self.url, payload, self.headers)
 
-    def test_check_invoice_fujian(self):
-        """福建普通发票查验成功"""
+    def test_fujian(self):
+        """福建普通发票查验"""
         payload = {'fplx': '04', 'fpdm': '3500163350', 'fphm': '21099644', 'jym': '920870',
                    'kprq': '20170621','uniqueId':'1000004',
                    'sign':md5("fpdm=3500163350&fphm=21099644&fplx=04&jym=920870&kprq=20170621&uniqueId=1000004&de92dbf0b12d11e6aa28b0c090607876".encode("utf-8"))}
         test_chack = Chack()
         test_chack.chack(self.url, payload, self.headers)
 
-    def test_check_invoice_jiangxi(self):
-        """江西普通发票查验成功"""
+    def test_jiangxi(self):
+        """江西普通发票查验"""
         payload = {'fplx': '01', 'fpdm': '3600163130', 'fphm': '06998169', 'fpje': '1522.64',
                    'kprq': '20171018','uniqueId':'1000004',
                    'sign':md5("fpdm=3600163130&fphm=06998169&fpje=1522.64&fplx=01&kprq=20171018&uniqueId=1000004&de92dbf0b12d11e6aa28b0c090607876".encode("utf-8"))}
         test_chack = Chack()
         test_chack.chack(self.url, payload, self.headers)
 
-    def test_check_invoice_shandong(self):
-        """山东普通发票查验成功"""
+    def test_shandong(self):
+        """山东普通发票查验"""
         payload = {'fplx': '04', 'fpdm': '3700164320', 'fphm': '33170062', 'jym': '690447',
                    'kprq': '20170606','uniqueId':'1000004',
                    'sign':md5("fpdm=3700164320&fphm=33170062&fplx=04&jym=690447&kprq=20170606&uniqueId=1000004&de92dbf0b12d11e6aa28b0c090607876".encode("utf-8"))}
         test_chack = Chack()
         test_chack.chack(self.url, payload, self.headers)
 
-    def test_check_invoice_hubei(self):
-        """湖北普通发票查验成功"""
+    def test_hubei(self):
+        """湖北普通发票查验"""
         payload = {'fplx': '04', 'fpdm': '4200164320', 'fphm': '47982351', 'jym': '464625',
                    'kprq': '20171026','uniqueId':'1000004',
                    'sign':md5("fpdm=4200164320&fphm=47982351&fplx=04&jym=464625&kprq=20171026&uniqueId=1000004&de92dbf0b12d11e6aa28b0c090607876".encode("utf-8"))}
         test_chack = Chack()
         test_chack.chack(self.url, payload, self.headers)
 
-    def test_check_invoice_hunan(self):
-        """湖南普通发票查验成功"""
+    def test_hunan(self):
+        """湖南普通发票查验"""
         payload = {'fplx': '04', 'fpdm': '4300171320', 'fphm': '04268504', 'jym': '288558',
                    'kprq': '20170616','uniqueId':'1000004',
                    'sign':md5("fpdm=4300171320&fphm=04268504&fplx=04&jym=288558&kprq=20170616&uniqueId=1000004&de92dbf0b12d11e6aa28b0c090607876".encode("utf-8"))}
         test_chack = Chack()
         test_chack.chack(self.url, payload, self.headers)
 
-    def test_check_invoice_guangdong(self):
-        """广东普通发票查验成功"""
+    def test_guangdong(self):
+        """广东普通发票查验"""
         payload = {'fplx': '04', 'fpdm': '4400163320', 'fphm': '36198951', 'jym': '596043',
                    'kprq': '20170421','uniqueId':'1000004',
                    'sign':md5("fpdm=4400163320&fphm=36198951&fplx=04&jym=596043&kprq=20170421&uniqueId=1000004&de92dbf0b12d11e6aa28b0c090607876".encode("utf-8"))}
         test_chack = Chack()
         test_chack.chack(self.url, payload, self.headers)
 
-    def test_check_invoice_guangxi(self):
-        """广西普通发票查验成功"""
+    def test_guangxi(self):
+        """广西普通发票查验"""
         payload = {'fplx': '04', 'fpdm': '4500171320', 'fphm': '15663941', 'jym': '249570',
                    'kprq': '20170612','uniqueId':'1000004',
                    'sign':md5("fpdm=4500171320&fphm=15663941&fplx=04&jym=249570&kprq=20170612&uniqueId=1000004&de92dbf0b12d11e6aa28b0c090607876".encode("utf-8"))}
         test_chack = Chack()
         test_chack.chack(self.url, payload, self.headers)
 
-    def test_check_invoice_hainan(self):
-        """海南普通发票查验成功"""
+    def test_hainan(self):
+        """海南普通发票查验"""
         payload = {'fplx': '04', 'fpdm': '4600162320', 'fphm': '09581833',
                    'jym': '264788','kprq': '20170524','uniqueId':'1000004',
                    'sign':md5("fpdm=4600162320&fphm=09581833&fplx=04&jym=264788&kprq=20170524&uniqueId=1000004&de92dbf0b12d11e6aa28b0c090607876".encode("utf-8"))}
         test_chack = Chack()
         test_chack.chack(self.url, payload, self.headers)
 
-    def test_check_invoice_shaxi(self):
-        """陕西普通发票查验成功"""
+    def test_shaxi(self):
+        """陕西普通发票查验"""
         payload = {'fplx': '04', 'fpdm': '6100171320', 'fphm': '09030275',  'jym': '911427',
                    'kprq': '20170626','uniqueId':'1000004',
                    'sign':md5("fpdm=6100171320&fphm=09030275&fplx=04&jym=911427&kprq=20170626&uniqueId=1000004&de92dbf0b12d11e6aa28b0c090607876".encode("utf-8"))}
         test_chack = Chack()
         test_chack.chack(self.url, payload, self.headers)
 
-    def test_check_invoice_ningxia(self):
-        """宁夏普通发票查验成功"""
+    def test_ningxia(self):
+        """宁夏普通发票查验`"""
         payload = {'fplx': '04', 'fpdm': '6400171320', 'fphm': '02645843', 'jym': '932430',
                    'kprq': '20170916','uniqueId':'1000004',
                    'sign':md5("fpdm=6400171320&fphm=02645843&fplx=04&jym=932430&kprq=20170916&uniqueId=1000004&de92dbf0b12d11e6aa28b0c090607876".encode("utf-8"))}

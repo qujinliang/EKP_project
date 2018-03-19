@@ -23,7 +23,7 @@ def send_mail(file_new):
     user = 'qujinliang@uknower.com'
     password = '5H84rhfYaXsLEFyP'
     sender = 'qujinliang@uknower.com'
-    receiver = ['qujinliang@uknower.com']
+    receiver = ['qujinliang@uknower.com','liupingjun@uknower.com','kai.wang@huilianyi.com','yueyue.chen@huilianyi.com']
     subject = '各省发票查验接口监控报告'
     msg = MIMEMultipart('mixed')
     msg_html1 = MIMEText(mail_body, 'html', 'utf-8')
