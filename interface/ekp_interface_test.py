@@ -51,9 +51,15 @@ class CheckInvoiceTest(unittest.TestCase):
 
     def test_shanghai(self):
         """上海普通发票查验"""
-        payload = {'fplx': '04', 'fpdm': '3100162320', 'fphm': '72242765', 'jym': '477868',
-                   'kprq': '20170711',"uniqueId":"1000004",
-                   "sign":md5("fpdm=3100162320&fphm=72242765&fplx=04&jym=477868&kprq=20170711&uniqueId=1000004&de92dbf0b12d11e6aa28b0c090607876".encode("utf-8"))}
+        payload = {
+            "fpdm": "3100171320",
+            "fphm": "48702542",
+            "fplx": "04",
+            "jym": "822595",
+            "kprq": "20170612",
+            "uniqueId": "1000004",
+            "sign": md5("fpdm=3100171320&fphm=48702542&fplx=04&jym=822595&kprq=20170612&uniqueId=1000004&de92dbf0b12d11e6aa28b0c090607876".encode("utf-8"))
+        }
         test_chack = Chack()
         test_chack.chack(self.url, payload, self.headers)
 
