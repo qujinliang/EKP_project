@@ -1,14 +1,10 @@
 # -*- coding:utf-8 -*-
 
-import requests
+
 import unittest
-import os, sys
-import time
-import json
 from interface.chack import Chack
 from interface.jiami import *
 
-from interface.bianma import utf8
 
 
 class CheckInvoiceTest(unittest.TestCase):
@@ -212,9 +208,9 @@ class CheckInvoiceTest(unittest.TestCase):
 
     def test_hainan(self):
         """海南普通发票查验"""
-        payload = {'fplx': '04', 'fpdm': '4600162320', 'fphm': '09581833',
-                   'jym': '264788','kprq': '20170524','uniqueId':'1000004',
-                   'sign':md5("fpdm=4600162320&fphm=09581833&fplx=04&jym=264788&kprq=20170524&uniqueId=1000004&de92dbf0b12d11e6aa28b0c090607876".encode("utf-8"))}
+        payload = {'fplx': '01', 'fpdm': '4600163130', 'fphm': '01208520',
+                   'fpje': '816610.26','kprq': '20171123','uniqueId':'1000004',
+                   'sign':md5("fpdm=4600163130&fphm=01208520&fpje=816610.26&fplx=01&kprq=20171123&uniqueId=1000004&de92dbf0b12d11e6aa28b0c090607876".encode("utf-8"))}
         test_chack = Chack()
         test_chack.chack(self.url, payload, self.headers)
 

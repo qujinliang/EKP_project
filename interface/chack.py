@@ -14,7 +14,7 @@ class Chack(unittest.TestCase):
             self.assertEqual(self.result['msg'], u'查询成功')
             print(self.result)
         except (AttributeError, json.decoder.JSONDecodeError) as e:
-            print(r.text)
+            print(e)
 
         finally:
             if self.result['msg'] == '超过该张票当天查验次数' :
@@ -23,6 +23,8 @@ class Chack(unittest.TestCase):
                 print("失败原因：监控到税局接口异常，可能会造成查验失败")
             elif self.result['code'] == 9999:
                 print("失败原因：当前查验接口不稳定，可能会造成查验失败")
+            elif self.result['code'] != 0:
+                print(r.text)
 
 
 
