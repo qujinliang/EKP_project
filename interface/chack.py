@@ -7,8 +7,8 @@ import unittest
 class Chack(unittest.TestCase):
     def chack(self, url, payload, headers):
         try:
-            r = requests.post(url, json=payload, headers=headers)
-            self.result = r.json()
+            self.r = requests.post(url, json=payload, headers=headers)
+            self.result = self.r.json()
 
             self.assertEqual(self.result['code'], 0)
             self.assertEqual(self.result['msg'], u'查询成功')
@@ -24,7 +24,7 @@ class Chack(unittest.TestCase):
             elif self.result['code'] == 9999:
                 print("失败原因：当前查验接口不稳定，可能会造成查验失败")
             elif self.result['code'] != 0:
-                print(r.text)
+                print(self.r.text)
 
 
 

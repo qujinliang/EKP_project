@@ -100,9 +100,9 @@ class CheckInvoiceTest(unittest.TestCase):
 
     def test_henan(self):
         """河南普通发票查验"""
-        payload = {'fplx': '04', 'fpdm': '4100171320', 'fphm': '05326230', 'jym': '710099',
-                   'kprq': '20171123','uniqueId':'1000004',
-                   'sign':md5("fpdm=4100171320&fphm=05326230&fplx=04&jym=710099&kprq=20171123&uniqueId=1000004&de92dbf0b12d11e6aa28b0c090607876".encode("utf-8"))}
+        payload = {'fplx': '01', 'fpdm': '4100162130', 'fphm': '16971475', 'fpje': '7250.25',
+                   'kprq': '20170809','uniqueId':'1000004',
+                   'sign':md5("fpdm=4100162130&fphm=16971475&fpje=7250.25&fplx=01&kprq=20170809&uniqueId=1000004&de92dbf0b12d11e6aa28b0c090607876".encode("utf-8"))}
         test_chack = Chack()
         test_chack.chack(self.url, payload, self.headers)
 
@@ -116,11 +116,11 @@ class CheckInvoiceTest(unittest.TestCase):
 
 
 
-    # def test_check_invoice_shanxi(self):
-    #     """山西普通发票查验成功"""
-    #     payload = {'fplx': '01', 'fpdm': '1400171130', 'fphm': '02062714', 'fpje': '17094.03',
-    #                'kprq': '20171117','uniqueId':'1000004',
-    #                'sign':md5("fpdm=1400171130&fphm=02062714&fplx=04&jym=520590&kprq=20170814&uniqueId=1000004&de92dbf0b12d11e6aa28b0c090607876".encode("utf-8"))}
+    def test_check_invoice_shanxi(self):
+        """山西普通发票查验成功"""
+        payload = {'fplx': '01', 'fpdm': '1400171130', 'fphm': '02062714', 'fpje': '17094.03',
+                   'kprq': '20171117','uniqueId':'1000004',
+                   'sign':md5("fpdm=1400171130&fphm=02062714&fpje=17094.03&fplx=01&kprq=20171117&uniqueId=1000004&de92dbf0b12d11e6aa28b0c090607876".encode("utf-8"))}
 
 
 
@@ -222,13 +222,74 @@ class CheckInvoiceTest(unittest.TestCase):
         test_chack = Chack()
         test_chack.chack(self.url, payload, self.headers)
 
-    def test_ningxia(self):
-        """宁夏普通发票查验`"""
-        payload = {'fplx': '04', 'fpdm': '6400171320', 'fphm': '02645843', 'jym': '932430',
-                   'kprq': '20170916','uniqueId':'1000004',
-                   'sign':md5("fpdm=6400171320&fphm=02645843&fplx=04&jym=932430&kprq=20170916&uniqueId=1000004&de92dbf0b12d11e6aa28b0c090607876".encode("utf-8"))}
+
+    def test_yunnan(self):
+        """云南普通发票查验`"""
+        payload = {'fplx': '04', 'fpdm': '5300171320', 'fphm': '13826269', 'jym': '578163',
+                    'kprq': '20171119', 'uniqueId': '1000004',
+                    'sign': md5("fpdm=5300171320&fphm=13826269&fplx=04&jym=578163&kprq=20171119&uniqueId=1000004&de92dbf0b12d11e6aa28b0c090607876".encode("utf-8"))}
         test_chack = Chack()
         test_chack.chack(self.url, payload, self.headers)
+
+    def test_heilongjiang(self):
+        """黑龙江普通发票查验`"""
+        payload = {'fplx': '04', 'fpdm': '2300173320', 'fphm': '12299469', 'jym': '239171',
+                    'kprq': '20180203', 'uniqueId': '1000004',
+                    'sign': md5("fpdm=2300173320&fphm=12299469&fplx=04&jym=239171&kprq=20180203&uniqueId=1000004&de92dbf0b12d11e6aa28b0c090607876".encode("utf-8"))}
+        test_chack = Chack()
+        test_chack.chack(self.url, payload, self.headers)
+
+    def test_guizhou(self):
+        """贵州普通发票查验`"""
+        payload = {'fplx': '04', 'fpdm': '5200173320', 'fphm': '07708742', 'jym': '407547',
+                    'kprq': '20180127', 'uniqueId': '1000004',
+                    'sign': md5("fpdm=5200173320&fphm=07708742&fplx=04&jym=407547&kprq=20180127&uniqueId=1000004&de92dbf0b12d11e6aa28b0c090607876".encode("utf-8"))}
+        test_chack = Chack()
+        test_chack.chack(self.url, payload, self.headers)
+
+    def test_xizang(self):
+        """西藏普通发票查验`"""
+        payload = {'fplx': '04', 'fpdm': '5400171320', 'fphm': '01316456', 'jym': '536623',
+                    'kprq': '20171209', 'uniqueId': '1000004',
+                    'sign': md5("fpdm=5400171320&fphm=01316456&fplx=04&jym=536623&kprq=20171209&uniqueId=1000004&de92dbf0b12d11e6aa28b0c090607876".encode("utf-8"))}
+        test_chack = Chack()
+        test_chack.chack(self.url, payload, self.headers)
+
+    def test_gansu(self):
+        """甘肃普通发票查验`"""
+        payload = {'fplx': '04', 'fpdm': '6200171350', 'fphm': '00324121', 'jym': '376901',
+                    'kprq': '20180227', 'uniqueId': '1000004',
+                    'sign': md5("fpdm=6200171350&fphm=00324121&fplx=04&jym=376901&kprq=20180227&uniqueId=1000004&de92dbf0b12d11e6aa28b0c090607876".encode("utf-8"))}
+        test_chack = Chack()
+        test_chack.chack(self.url, payload, self.headers)
+
+    def test_qinghai(self):
+        """青海普通发票查验`"""
+        payload = {'fplx': '04', 'fpdm': '6300162350', 'fphm': '02226976', 'jym': '163565',
+                    'kprq': '20180113', 'uniqueId': '1000004',
+                    'sign': md5("fpdm=6300162350&fphm=02226976&fplx=04&jym=163565&kprq=20180113&uniqueId=1000004&de92dbf0b12d11e6aa28b0c090607876".encode("utf-8"))}
+        test_chack = Chack()
+        test_chack.chack(self.url, payload, self.headers)
+
+    def test_ningxi(self):
+        """宁夏普通发票查验`"""
+        payload = {'fplx': '04', 'fpdm': '6400173320', 'fphm': '02748815', 'jym': '197261',
+                    'kprq': '20180323', 'uniqueId': '1000004',
+                    'sign': md5("fpdm=6400173320&fphm=02748815&fplx=04&jym=197261&kprq=20180323&uniqueId=1000004&de92dbf0b12d11e6aa28b0c090607876".encode("utf-8"))}
+        test_chack = Chack()
+        test_chack.chack(self.url, payload, self.headers)
+
+    def test_xinjiang(self):
+        """新疆普通发票查验`"""
+        payload = {'fplx': '04', 'fpdm': '6500174320', 'fphm': '04312540', 'jym': '393788',
+                    'kprq': '20180111', 'uniqueId': '1000004',
+                    'sign': md5("fpdm=6500174320&fphm=04312540&fplx=04&jym=393788&kprq=20180111&uniqueId=1000004&de92dbf0b12d11e6aa28b0c090607876".encode("utf-8"))}
+        test_chack = Chack()
+        test_chack.chack(self.url, payload, self.headers)
+
+
+
+
 
 
     # def test_zyfp_success(self):
