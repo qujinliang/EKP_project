@@ -1,5 +1,7 @@
 from interface.jiami import *
 
+'''发票数据存储模块'''
+
 class DataFile():
 
     def tianjin(self):

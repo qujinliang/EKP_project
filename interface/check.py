@@ -1,9 +1,20 @@
 # -*- coding:utf-8 -*-
+# author：jinliang
+# fileName: check.py
+# used for:长软查验发票
 
 import requests
 import json
 import unittest
 
+'''
+    这是一个查验模块，Check是查验类，集成了unittest.TestCase类
+    它有一个check方法，需要传三个参数，url,payload,headers
+    url:要请求的接口地址
+    payload:请求的参数集合
+    headers：请求的头部信息
+    直接对请求的结果进行断言，并打印结果
+'''
 class Check(unittest.TestCase):
     def check(self, url, payload, headers):
         try:

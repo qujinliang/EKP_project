@@ -1,5 +1,7 @@
 # -*- coding:utf-8 -*-
-
+# author：jinliang
+# fileName: eck_interface_test.py
+# used for:长软查验接口监控
 
 import unittest
 from interface.check import Check
