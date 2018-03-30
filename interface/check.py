@@ -4,8 +4,8 @@ import requests
 import json
 import unittest
 
-class Chack(unittest.TestCase):
-    def chack(self, url, payload, headers):
+class Check(unittest.TestCase):
+    def check(self, url, payload, headers):
         try:
             self.r = requests.post(url, json=payload, headers=headers)
             self.result = self.r.json()

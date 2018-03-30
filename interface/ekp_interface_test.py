@@ -2,7 +2,7 @@
 
 
 import unittest
-from interface.chack import Chack
+from interface.check import Check
 from interface.jiami import *
 from interface.datafile import *
 
@@ -33,210 +33,204 @@ class CheckInvoiceTest(unittest.TestCase):
         """天津普通发票查验"""
         data = DataFile()
         payload = data.tianjin()
-        test_chack = Chack()
-        test_chack.chack(self.url, payload, self.headers)
+        test_check = Check()
+        test_check.check(self.url, payload, self.headers)
 
     def test_shanghai(self):
         """上海普通发票查验"""
         data = DataFile()
         payload = data.shanghai()
-        test_chack = Chack()
-        test_chack.chack(self.url, payload, self.headers)
+        test_check = Check()
+        test_check.check(self.url, payload, self.headers)
 
     def test_beijing(self):
         """北京普通发票查验"""
         data = DataFile()
         payload = data.beijing()
-        test_chack = Chack()
-        test_chack.chack(self.url, payload, self.headers)
+        test_check = Check()
+        test_check.check(self.url, payload, self.headers)
 
     def test_hebei(self):
         """河北普通发票查验"""
         data = DataFile()
         payload = data.hebei()
-        test_chack = Chack()
-        test_chack.chack(self.url, payload, self.headers)
+        test_check = Check()
+        test_check.check(self.url, payload, self.headers)
 
     def test_liaoning(self):
         """辽宁普通发票查验成功"""
         data = DataFile()
         payload = data.liaoning()
-        test_chack = Chack()
-        test_chack.chack(self.url, payload, self.headers)
+        test_check = Check()
+        test_check.check(self.url, payload, self.headers)
 
     def test_anhui(self):
         """安徽普通发票查验"""
         data = DataFile()
         payload = data.anhui()
-        test_chack = Chack()
-        test_chack.chack(self.url, payload, self.headers)
+        test_check = Check()
+        test_check.check(self.url, payload, self.headers)
 
     def test_henan(self):
         """河南普通发票查验"""
         data = DataFile()
         payload = data.henan()
-        test_chack = Chack()
-        test_chack.chack(self.url, payload, self.headers)
+        test_check = Check()
+        test_check.check(self.url, payload, self.headers)
 
     def test_shenzhen(self):
         """深圳普通发票查验"""
         data = DataFile()
         payload = data.shenzhen()
-        test_chack = Chack()
-        test_chack.chack(self.url, payload, self.headers)
-
-
+        test_check = Check()
+        test_check.check(self.url, payload, self.headers)
 
     def test_shanxi(self):
         """山西普通发票查验成功"""
         data = DataFile()
         payload = data.shanxi()
-        test_chack = Chack()
-        test_chack.chack(self.url, payload, self.headers)
-
+        test_check = Check()
+        test_check.check(self.url, payload, self.headers)
 
     def test_neimeng(self):
         """内蒙普通发票查验"""
         data = DataFile()
         payload = data.neimeng()
-        test_chack = Chack()
-        test_chack.chack(self.url, payload, self.headers)
-
-
+        test_check = Check()
+        test_check.check(self.url, payload, self.headers)
 
     def test_jilin(self):
         """吉林普通发票查验"""
         data = DataFile()
         payload = data.jilin()
-        test_chack = Chack()
-        test_chack.chack(self.url, payload, self.headers)
+        test_check = Check()
+        test_check.check(self.url, payload, self.headers)
 
     def test_zhejiang(self):
         """浙江专用发票查验"""
         data = DataFile()
         payload = data.zhejiang()
-        test_chack = Chack()
-        test_chack.chack(self.url, payload, self.headers)
+        test_check = Check()
+        test_check.check(self.url, payload, self.headers)
 
     def test_fujian(self):
         """福建普通发票查验"""
         data = DataFile()
         payload = data.fujian()
-        test_chack = Chack()
-        test_chack.chack(self.url, payload, self.headers)
+        test_check = Check()
+        test_check.check(self.url, payload, self.headers)
 
     def test_jiangxi(self):
         """江西普通发票查验"""
         data = DataFile()
         payload = data.jiangxi()
-        test_chack = Chack()
-        test_chack.chack(self.url, payload, self.headers)
+        test_check = Check()
+        test_check.check(self.url, payload, self.headers)
 
     def test_shandong(self):
         """山东普通发票查验"""
         data = DataFile()
         payload = data.shandong()
-        test_chack = Chack()
-        test_chack.chack(self.url, payload, self.headers)
+        test_check = Check()
+        test_check.check(self.url, payload, self.headers)
 
     def test_hubei(self):
         """湖北普通发票查验"""
         data = DataFile()
         payload = data.hubei()
-        test_chack = Chack()
-        test_chack.chack(self.url, payload, self.headers)
+        test_check = Check()
+        test_check.check(self.url, payload, self.headers)
 
     def test_hunan(self):
         """湖南普通发票查验"""
         data = DataFile()
         payload = data.hunan()
-        test_chack = Chack()
-        test_chack.chack(self.url, payload, self.headers)
+        test_check = Check()
+        test_check.check(self.url, payload, self.headers)
 
     def test_guangdong(self):
         """广东普通发票查验"""
         data = DataFile()
         payload = data.guangdong()
-        test_chack = Chack()
-        test_chack.chack(self.url, payload, self.headers)
+        test_check = Check()
+        test_check.check(self.url, payload, self.headers)
 
     def test_guangxi(self):
         """广西普通发票查验"""
         data = DataFile()
         payload = data.guangxi()
-        test_chack = Chack()
-        test_chack.chack(self.url, payload, self.headers)
+        test_check = Check()
+        test_check.check(self.url, payload, self.headers)
 
     def test_hainan(self):
         """海南普通发票查验"""
         data = DataFile()
         payload = data.hainan()
-        test_chack = Chack()
-        test_chack.chack(self.url, payload, self.headers)
+        test_check = Check()
+        test_check.check(self.url, payload, self.headers)
 
     def test_shaxi(self):
         """陕西普通发票查验"""
         data = DataFile()
         payload = data.shanxi()
-        test_chack = Chack()
-        test_chack.chack(self.url, payload, self.headers)
+        test_check = Check()
+        test_check.check(self.url, payload, self.headers)
 
 
     def test_yunnan(self):
         """云南普通发票查验`"""
         data = DataFile()
         payload = data.yunnan()
-        test_chack = Chack()
-        test_chack.chack(self.url, payload, self.headers)
+        test_check = Check()
+        test_check.check(self.url, payload, self.headers)
 
     def test_heilongjiang(self):
         """黑龙江普通发票查验`"""
         data = DataFile()
         payload = data.heilongjiang()
-        test_chack = Chack()
-        test_chack.chack(self.url, payload, self.headers)
-
+        test_check = Check()
+        test_check.check(self.url, payload, self.headers)
     def test_guizhou(self):
         """贵州普通发票查验`"""
         data = DataFile()
         payload = data.guizhou()
-        test_chack = Chack()
-        test_chack.chack(self.url, payload, self.headers)
+        test_check = Check()
+        test_check.check(self.url, payload, self.headers)
 
     def test_xizang(self):
         """西藏普通发票查验`"""
         data = DataFile()
         payload = data.xizang()
-        test_chack = Chack()
-        test_chack.chack(self.url, payload, self.headers)
+        test_check = Check()
+        test_check.check(self.url, payload, self.headers)
 
     def test_gansu(self):
         """甘肃普通发票查验`"""
         data = DataFile()
         payload = data.gansu()
-        test_chack = Chack()
-        test_chack.chack(self.url, payload, self.headers)
+        test_check = Check()
+        test_check.check(self.url, payload, self.headers)
 
     def test_qinghai(self):
         """青海普通发票查验`"""
         data = DataFile()
         payload = data.qinghai()
-        test_chack = Chack()
-        test_chack.chack(self.url, payload, self.headers)
+        test_check = Check()
+        test_check.check(self.url, payload, self.headers)
 
     def test_ningxi(self):
         """宁夏普通发票查验`"""
         data = DataFile()
         payload = data.ningxi()
-        test_chack = Chack()
-        test_chack.chack(self.url, payload, self.headers)
+        test_check = Check()
+        test_check.check(self.url, payload, self.headers)
 
     def test_xinjiang(self):
         """新疆普通发票查验`"""
         data = DataFile()
         payload = data.xinjiang()
-        test_chack = Chack()
-        test_chack.chack(self.url, payload, self.headers)
+        test_check = Check()
+        test_check.check(self.url, payload, self.headers)
 
 
 
