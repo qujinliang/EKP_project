@@ -15,16 +15,16 @@ class DataFile():
     def shanghai(self):
         """上海普通发票查验"""
         payload = {
-            "fpdm": "3100171320","fphm": "48702542","fplx": "04","jym": "822595","kprq": "20170612","uniqueId": "1000004",
-            "sign": md5("fpdm=3100171320&fphm=48702542&fplx=04&jym=822595&kprq=20170612&uniqueId=1000004&de92dbf0b12d11e6aa28b0c090607876".encode("utf-8"))
+            "fpdm": "3100172320","fphm": "87120411","fplx": "04","jym": "468403","kprq": "20180103","uniqueId": "1000004",
+            "sign": md5("fpdm=3100172320&fphm=87120411&fplx=04&jym=468403&kprq=20180103&uniqueId=1000004&de92dbf0b12d11e6aa28b0c090607876".encode("utf-8"))
         }
         return payload
 
     def beijing(self):
         """北京普通发票查验"""
         payload = {
-            "fpdm": "1100171320","fphm": "29688656","fplx": "04","jym": "079367","kprq": "20170514","uniqueId": "1000004",
-            "sign":md5("fpdm=1100171320&fphm=29688656&fplx=04&jym=079367&kprq=20170514&uniqueId=1000004&de92dbf0b12d11e6aa28b0c090607876".encode("utf-8"))
+            "fpdm": "1100173320","fphm": "58929139","fplx": "04","jym": "056970","kprq": "20180103","uniqueId": "1000004",
+            "sign":md5("fpdm=1100173320&fphm=58929139&fplx=04&jym=056970&kprq=20180103&uniqueId=1000004&de92dbf0b12d11e6aa28b0c090607876".encode("utf-8"))
         }
         return payload
 
@@ -51,8 +51,8 @@ class DataFile():
     def henan(self):
         """河南普通发票查验"""
         payload = {
-            'fplx': '01', 'fpdm': '4100162130', 'fphm': '16971475', 'fpje': '7250.25','kprq': '20170809', 'uniqueId': '1000004',
-            'sign': md5("fpdm=4100162130&fphm=16971475&fpje=7250.25&fplx=01&kprq=20170809&uniqueId=1000004&de92dbf0b12d11e6aa28b0c090607876".encode("utf-8"))}
+            'fplx': '04', 'fpdm': '4100173320', 'fphm': '06001047', 'jym': '489592','kprq': '20180105', 'uniqueId': '1000004',
+            'sign': md5("fpdm=4100173320&fphm=06001047&fplx=04&jym=489592&kprq=20180105&uniqueId=1000004&de92dbf0b12d11e6aa28b0c090607876".encode("utf-8"))}
         return payload
 
     def shenzhen(self):
@@ -71,8 +71,8 @@ class DataFile():
     def neimeng(self):
         """内蒙普通发票查验"""
         payload = {
-            'fplx': '04', 'fpdm': '1500164350', 'fphm': '01058176', 'jym': '119257','kprq': '20170720','uniqueId':'1000004',
-            'sign':md5("fpdm=1500164350&fphm=01058176&fplx=04&jym=119257&kprq=20170720&uniqueId=1000004&de92dbf0b12d11e6aa28b0c090607876".encode("utf-8"))}
+            'fplx': '04', 'fpdm': '1500171320', 'fphm': '11610387', 'jym': '496101','kprq': '20180113','uniqueId':'1000004',
+            'sign':md5("fpdm=1500171320&fphm=11610387&fplx=04&jym=496101&kprq=20180113&uniqueId=1000004&de92dbf0b12d11e6aa28b0c090607876".encode("utf-8"))}
         return payload
 
     def jilin(self):
@@ -92,8 +92,8 @@ class DataFile():
     def fujian(self):
         """福建普通发票查验"""
         payload = {
-            'fplx': '04', 'fpdm': '3500163350', 'fphm': '21099644', 'jym': '920870','kprq': '20170621','uniqueId':'1000004',
-            'sign':md5("fpdm=3500163350&fphm=21099644&fplx=04&jym=920870&kprq=20170621&uniqueId=1000004&de92dbf0b12d11e6aa28b0c090607876".encode("utf-8"))}
+            'fplx': '04', 'fpdm': '3500163320', 'fphm': '50657158', 'jym': '912642','kprq': '20180102','uniqueId':'1000004',
+            'sign':md5("fpdm=3500163320&fphm=50657158&fplx=04&jym=912642&kprq=20180102&uniqueId=1000004&de92dbf0b12d11e6aa28b0c090607876".encode("utf-8"))}
         return payload
 
     def jiangxi(self):
@@ -106,8 +106,8 @@ class DataFile():
     def shandong(self):
         """山东普通发票查验"""
         payload = {
-            'fplx': '04', 'fpdm': '3700164320', 'fphm': '33170062', 'jym': '690447','kprq': '20170606','uniqueId':'1000004',
-            'sign':md5("fpdm=3700164320&fphm=33170062&fplx=04&jym=690447&kprq=20170606&uniqueId=1000004&de92dbf0b12d11e6aa28b0c090607876".encode("utf-8"))}
+            'fplx': '04', 'fpdm': '3700171320', 'fphm': '22052218', 'jym': '728827','kprq': '20180105','uniqueId':'1000004',
+            'sign':md5("fpdm=3700171320&fphm=22052218&fplx=04&jym=728827&kprq=20180105&uniqueId=1000004&de92dbf0b12d11e6aa28b0c090607876".encode("utf-8"))}
         return payload
 
     def hubei(self):
@@ -120,22 +120,22 @@ class DataFile():
     def hunan(self):
         """湖南普通发票查验"""
         payload = {
-            'fplx': '04', 'fpdm': '4300171320', 'fphm': '04268504', 'jym': '288558','kprq': '20170616','uniqueId':'1000004',
-            'sign':md5("fpdm=4300171320&fphm=04268504&fplx=04&jym=288558&kprq=20170616&uniqueId=1000004&de92dbf0b12d11e6aa28b0c090607876".encode("utf-8"))}
+            'fplx': '04', 'fpdm': '4300173320', 'fphm': '02188236', 'jym': '883431','kprq': '20180103','uniqueId':'1000004',
+            'sign':md5("fpdm=4300173320&fphm=02188236&fplx=04&jym=883431&kprq=20180103&uniqueId=1000004&de92dbf0b12d11e6aa28b0c090607876".encode("utf-8"))}
         return payload
 
     def guangdong(self):
         """广东普通发票查验"""
         payload = {
-            'fplx': '04', 'fpdm': '4400163320', 'fphm': '36198951', 'jym': '596043','kprq': '20170421','uniqueId':'1000004',
-            'sign':md5("fpdm=4400163320&fphm=36198951&fplx=04&jym=596043&kprq=20170421&uniqueId=1000004&de92dbf0b12d11e6aa28b0c090607876".encode("utf-8"))}
+            'fplx': '04', 'fpdm': '4400163320', 'fphm': '00021010', 'jym': '005051','kprq': '20180102','uniqueId':'1000004',
+            'sign':md5("fpdm=4400163320&fphm=00021010&fplx=04&jym=005051&kprq=20180102&uniqueId=1000004&de92dbf0b12d11e6aa28b0c090607876".encode("utf-8"))}
         return payload
 
     def guangxi(self):
         """广西普通发票查验"""
-        payload = {'fplx': '04', 'fpdm': '4500171320', 'fphm': '15663941', 'jym': '249570',
-                   'kprq': '20170612','uniqueId':'1000004',
-                   'sign':md5("fpdm=4500171320&fphm=15663941&fplx=04&jym=249570&kprq=20170612&uniqueId=1000004&de92dbf0b12d11e6aa28b0c090607876".encode("utf-8"))}
+        payload = {'fplx': '04', 'fpdm': '4500172320', 'fphm': '09251966', 'jym': '849993',
+                   'kprq': '20180105','uniqueId':'1000004',
+                   'sign':md5("fpdm=4500172320&fphm=09251966&fplx=04&jym=849993&kprq=20180105&uniqueId=1000004&de92dbf0b12d11e6aa28b0c090607876".encode("utf-8"))}
         return payload
 
     def hainan(self):
