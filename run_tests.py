@@ -24,7 +24,8 @@ def send_mail(file_new):
     password = '5H84rhfYaXsLEFyP'
     sender = 'qujinliang@uknower.com'
     receiver = ['qujinliang@uknower.com','liupingjun@uknower.com','xudacheng@uknower.com','huangjia@uknower.com',
-                'sunhao@uknower.com','kai.wang@huilianyi.com','yueyue.chen@huilianyi.com','wangbo@uknower.com']
+                'sunhao@uknower.com','kai.wang@huilianyi.com','yueyue.chen@huilianyi.com','wangbo@uknower.com',
+                'lawliet_xu@intsig.net','emma_huang@intsig.net']
     subject = '各省发票查验接口监控报告'
     msg = MIMEMultipart('mixed')
     msg_html1 = MIMEText(mail_body, 'html', 'utf-8')
