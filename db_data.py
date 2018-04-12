@@ -4,7 +4,7 @@ import time
 
 client = MongoClient('40.125.167.185',27017)
 db = client.user
-db.authenticate("user","ysyc-mongo-user")
+db.authenticate("user","")
 db = client.user
 collection = db.fc_invoice_info
 
