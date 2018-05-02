@@ -207,3 +207,10 @@ class DataFile():
                     'kprq': '20180111', 'uniqueId': '1000004',
                     'sign': md5("fpdm=6500174320&fphm=04312540&fplx=04&jym=393788&kprq=20180111&uniqueId=1000004&de92dbf0b12d11e6aa28b0c090607876".encode("utf-8"))}
         return payload
+
+    def jiangsu(self):
+        """江苏普通发票查验`"""
+        payload = {'fplx': '04', 'fpdm': '3200154320', 'fphm': '15967293', 'jym': '497112',
+                    'kprq': '20180104', 'uniqueId': '1000004',
+                    'sign': md5("fpdm=3200154320&fphm=15967293&fplx=04&jym=497112&kprq=20180104&uniqueId=1000004&de92dbf0b12d11e6aa28b0c090607876".encode("utf-8"))}
+        return payload
