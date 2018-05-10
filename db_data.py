@@ -2,9 +2,9 @@ from pymongo import MongoClient
 import re
 import time
 
-client = MongoClient('139.219.227.123',27017)
+client = MongoClient('',)
 db = client.user
-db.authenticate("user","")
+db.authenticate("","")
 db = client.user
 collection = db.fc_invoice_info
 
