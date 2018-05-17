@@ -9,6 +9,7 @@ import unittest
 
 
 class Check(unittest.TestCase):
+    BL = bool
     '''
         这是一个查验模块，Check是查验类，集成了unittest.TestCase类
         它有一个check方法，需要传三个参数，url,payload,headers
@@ -32,13 +33,19 @@ class Check(unittest.TestCase):
             if self.r:
                 if self.result['code'] == 106:
                     print("失败原因：监控到税局接口异常，可能会造成查验失败")
+                    Check.BL = False
                 elif self.result['code'] == 9999:
                     print("失败原因：当前查验接口不稳定，可能会造成查验失败")
+                    Check.BL = False
                 elif self.result['code'] != 0:
                     print(self.r.text)
+                    Check.BL = False
+
             else:
                 print("失败原因：请求查验接口超时！")
+                Check.BL = False
                 self.assertEqual(504,0)
+
 
 
 
