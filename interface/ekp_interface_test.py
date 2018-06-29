@@ -241,6 +241,13 @@ class CheckInvoiceTest(unittest.TestCase):
         test_check = Check()
         test_check.check(self.url, payload, self.headers)
 
+    def test_chongqing(self):
+        """重庆普通发票查验`"""
+        data = DataFile()
+        payload = data.jiangsu()
+        test_check = Check()
+        test_check.check(self.url, payload, self.headers)
+
 
 
 

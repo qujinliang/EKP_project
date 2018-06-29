@@ -214,3 +214,10 @@ class DataFile():
                     'kprq': '20180104', 'uniqueId': '1000004',
                     'sign': md5("fpdm=3200154320&fphm=15967293&fplx=04&jym=497112&kprq=20180104&uniqueId=1000004&de92dbf0b12d11e6aa28b0c090607876".encode("utf-8"))}
         return payload
+
+    def chongqing(self):
+        """重庆普通发票查验"""
+        payload = {'fplx': '01', 'fpdm': '5000181130', 'fphm': '01035487',
+                   'fpje': '5490.57','kprq': '20180314','uniqueId':'1000004',
+                   'sign':md5("fpdm=5000181130&fphm=01035487&fpje=5490.57&fplx=01&kprq=20180314&uniqueId=1000004&de92dbf0b12d11e6aa28b0c090607876".encode("utf-8"))}
+        return payload
