@@ -17,13 +17,12 @@ class CheckInvoiceTest(unittest.TestCase):
 
     def setUp(self):
         # 调用接口登录方法
-        self.url = "http://check.fapiaoxx.com/invoice/check/"
-        #self.url = "https://api.taxservices.cn/fpcyService/fpcyService.do"
+        # self.url = "http://check.fapiaoxx.com/invoice/check/"
+        self.url = "http://api.taxservices.cn/fpcyService/fpcyService.do"
         self.headers = {
-            'Cache-Control': 'no-cache',
-            'Content-Type': 'application/json',
-            'Accept-Encoding': 'gzip, deflate',
-            'Accept-Language': 'zh-CN,zh;q=0.8'
+            'Content-Type': "application/xml",
+            'Cache-Control': 'no-cache'
+
         }
 
     # print(self.headers)

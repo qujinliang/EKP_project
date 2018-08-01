@@ -20,24 +20,31 @@ class Check(unittest.TestCase):
     '''
     def check(self, url, payload, headers):
         try:
-            self.r = requests.post(url, json=payload, headers=headers)
-            self.result = self.r.json()
-
-            self.assertEqual(self.result['code'], 0)
+            self.r = requests.request("POST",url, data=payload, headers=headers)
+            self.result = self.r.text
+            if "<CYJGDM>001</CYJGDM>" in self.result:
+                CODE = 0
+            elif "<CYJGDM>106</CYJGDM>" in self.result:
+                CODE = 106
+            elif "<CYJGDM>001</CYJGDM>" in self.result:
+                CODE = 9999
+            else:
+                CODE = 88888
+            self.assertEqual(CODE, 0)
             # self.assertEqual(self.result['msg'], u'请求成功')
             print(self.result)
         except (AttributeError, json.decoder.JSONDecodeError) as e:
             print(e)
 
         finally:
-            if self.r:
-                if self.result['code'] == 106:
+            if self.r.text:
+                if CODE == 106:
                     print("失败原因：监控到税局接口异常，可能会造成查验失败")
                     Check.BL = False
-                elif self.result['code'] == 9999:
+                elif CODE == 9999:
                     print("失败原因：当前查验接口不稳定，可能会造成查验失败")
                     Check.BL = False
-                elif self.result['code'] != 0:
+                elif CODE != 0:
                     print(self.r.text)
                     Check.BL = False
 
